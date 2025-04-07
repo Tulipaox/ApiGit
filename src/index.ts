@@ -129,8 +129,7 @@ function addRepository(){
     console.log(`A a soma de todos os Repositório: ${totalPublicRepos}`)
 }
 
-function getTopFiveUsers(users: User[]): User[] {
+function getTopFiveUsers(){
     const sortedUsers = [...users].sort((a, b) => b.public_repos - a.public_repos);
-    console.log(sortedUsers.slice(0, 5))
     return sortedUsers.slice(0, 5)
 }

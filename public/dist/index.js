@@ -88,8 +88,7 @@ function addRepository() {
     }, 0);
     console.log(`A a soma de todos os Repositório: ${totalPublicRepos}`);
 }
-function getTopFiveUsers(users) {
+function getTopFiveUsers() {
     const sortedUsers = [...users].sort((a, b) => b.public_repos - a.public_repos);
-    console.log(sortedUsers.slice(0, 5));
     return sortedUsers.slice(0, 5);
 }
